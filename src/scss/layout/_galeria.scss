@@ -1,0 +1,25 @@
+@use 'base/variables' as v;
+
+.main {
+    .galeria {
+        overflow: hidden;
+
+        .foto {
+            width: 25%;
+            float: left
+            }
+
+            img {
+                width: 100%;
+                vertical-align: top;
+                opacity: .7;
+                &:hover{
+                    opacity: 1;
+                    -webkit-transition: all .3s aese ;
+                    -o-transition: all .3s aese ;
+                    transition: all .3s aese ;
+
+                }
+            }
+        }
+    }

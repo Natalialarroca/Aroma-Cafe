@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+
+footer {
+    background: #000;
+    overflow: hidden;
+    padding: 20px 20px;
+    height: 150px; /* Puedes ajustar esta altura según tus necesidades */
+    line-height: 50px; /* Alinea el texto verticalmente */
+    position: relative; /* Asegura que se mantenga al final de la página */
+    
+
+    p {
+        color: #fff;
+       text-align: center;
+       padding: 15px 0;
+    }
+}

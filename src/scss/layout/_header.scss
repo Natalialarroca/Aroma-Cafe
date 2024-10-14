@@ -1,0 +1,89 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+
+header {
+    width: 100%;
+    background-image: url('/src/img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+
+    .contenedor {
+        position: relative;
+        height: 700px;
+    }
+
+    .menu {
+        width: 100%;
+        text-align: right;
+
+        a {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            display: inline-block;
+            margin: 40px 20px;
+            text-decoration: none;
+            position: relative;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .textos {
+        width: 100%;
+        color: v.$blanco;
+        position: absolute;
+        top: 50%;
+        margin-top: -52px;
+
+
+        .nombre {
+            font-size: 50px;
+            font-weight: 600;
+
+        }
+
+        h3 {
+            font-weight: 300;
+            font-size: 25px;
+            font-style: italic;
+        }
+    }
+}
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px) {
+    header {
+
+        .contenedor {
+            position: static;
+            height: auto;
+        }
+
+        .textos {
+            position: static;
+            margin: 100px 0;
+        }
+
+        .menu {
+            text-align: center;
+
+            a {
+                margin: 10px 20px;
+            }
+
+            .nombre {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}
